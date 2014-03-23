@@ -1,11 +1,11 @@
 {
-  "name": "atom-dark-ui",
+  "name": "lambda-ui",
   "theme": "ui",
-  "version": "0.26.0",
-  "description": "Default dark theme for interface components",
+  "version": "0.0.0",
+  "description": "Minimalist dark low contrast theme",
   "license": "MIT",
-  "repository": "https://github.com/atom/atom-dark-ui",
+  "repository": "https://github.com/mattstyles/atom-dark-ui",
   "engines": {
-    "atom": ">0.40.0"
+    "atom": ">0.50.0"
   }
 }
