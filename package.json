@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "description": "Minimalist dark low contrast theme",
   "license": "MIT",
-  "repository": "https://github.com/mattstyles/atom-dark-ui",
+  "repository": "https://github.com/mattstyles/lambda-ui",
   "engines": {
     "atom": ">0.50.0"
   }
