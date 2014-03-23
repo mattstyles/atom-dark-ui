@@ -1,22 +1,17 @@
 @import "ui-variables";
-// @tab-radius: 3px;
-// @modified-icon-width: 8px;
-// @tab-skew: 30deg;
-// @tab-top-padding: 5px;
-// @tab-bottom-border-height: 8px;
-// @tab-border: 1px solid @tab-border-color;
-// @tab-bar-bottom-border-color: #111;
+
 @tab-radius: 3px;
 @modified-icon-width: 8px;
 @tab-skew: 30deg;
-@tab-top-padding: 5px;
+@tab-top-padding: 0px;
 @tab-bottom-border-height: 8px;
 @tab-border: 1px solid @tab-border-color;
 @tab-bar-bottom-border-color: #111;
 
 .tab-bar {
   height: @tab-height;
-  background: @tab-bar-background-color;
+  background: #181818;
+  color: #181818;
   padding: 0;
   box-sizing: border-box;
 
@@ -25,7 +20,7 @@
     top: @tab-top-padding;
     height: @tab-height;
     line-height: @tab-height;
-    color: @text-color;
+    color: #181818;
     padding-left: 0;
     transition: color .1s ease-in;
     border: none;
@@ -64,7 +59,8 @@
   .tab.active {
     z-index: 10;
     line-height: @tab-height - 3px;
-    color: @text-color-highlight;
+    color: #181818;
+    background: @cyan;
     // box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.1);
     border: none;
 
