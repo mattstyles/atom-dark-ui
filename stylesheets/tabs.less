@@ -11,7 +11,7 @@
 .tab-bar {
   height: @tab-height;
   background: #181818;
-  color: #181818;
+  color: transparent;
   padding: 0;
   box-sizing: border-box;
 
@@ -20,7 +20,7 @@
     top: @tab-top-padding;
     height: @tab-height;
     line-height: @tab-height;
-    color: #181818;
+    color: transparent;
     padding-left: 0;
     transition: color .1s ease-in;
     border: none;
@@ -32,59 +32,16 @@
       -webkit-transform: skewX(-@tab-skew);
       color: @text-color;
 
-      &:hover {
-        color: inherit;
-      }
-    }
-    &.modified:not(:hover) .close-icon {
-      top: @tab-height/2 - @modified-icon-width/2 + 1px;
-      right: 14px;
-      width: @modified-icon-width;
-      height: @modified-icon-width;
-    }
-
-    &.modified:hover .close-icon:hover {
-      color: @text-color-highlight;
-    }
-
-    .title{
-      -webkit-transform: skewX(-@tab-skew);
-    }
-
-    &:first-child {
-      margin-left: 20px;
     }
   }
 
   .tab.active {
     z-index: 10;
-    line-height: @tab-height - 3px;
-    color: #181818;
+    line-height: @tab-height;
+    color: transparent;
     background: @cyan;
     // box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.1);
     border: none;
-
-    .title{
-      position: relative;
-    }
-
-    .close-icon {
-      line-height: @tab-height - 1px;
-      color: @text-color;
-    }
-
-  }
-
-  .tab:hover {
-    color: @text-color-highlight;
-  }
-
-  .tab.active:hover .close-icon {
-    color: @text-color;
-
-    &:hover {
-      color: inherit;
-    }
   }
 
   .placeholder {
