@@ -5,6 +5,9 @@
   "description": "Minimalist dark low contrast theme",
   "license": "MIT",
   "repository": "https://github.com/mattstyles/lambda-ui",
+  "scripts": {
+    "prepublish": "rm -rf ./styles && cp -r ./stylesheets ./styles"
+  },
   "engines": {
     "atom": ">0.50.0"
   }
