@@ -9,24 +9,20 @@
   }
 }
 
-atom-panel {
-  .text(normal);
-  position: relative;
 
+atom-panel.bottom {
+  .text( normal );
+  border-top: 1px solid @tool-panel-border-color;
+  box-shadow: inset 0 1px 0 @background-color-highlight;
   background-color: @tool-panel-background-color;
+}
 
-  atom-panel.bottom {
-    border-top: 1px solid @tool-panel-border-color;
-    box-shadow: inset 0 1px 0 @background-color-highlight;
-  }
+atom-panel.left {
+  border-right: 1px solid @tool-panel-border-color;
+}
 
-  atom-panel.left {
-    border-right: 1px solid @tool-panel-border-color;
-  }
-
-  atom-panel.right {
-    border-left: 1px solid @tool-panel-border-color;
-  }
+atom-panel.right {
+  border-left: 1px solid @tool-panel-border-color;
 }
 
 .inset-panel {
