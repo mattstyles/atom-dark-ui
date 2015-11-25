@@ -18,6 +18,9 @@ atom-text-editor[mini].is-focused {
   .selection .region { background-color: desaturate(@background-color-info, 50%); }
 }
 
+atom-text-editor.is-focused {
+  .selection .region { background-color: desaturate(@background-color-info, 50%); }
+}
 
 atom-text-editor::shadow {
   @keyframes highlight {
@@ -30,7 +33,8 @@ atom-text-editor::shadow .selection .region {
   animation-name: highlight;
   animation-duration: 1s;
   animation-iteration-count: 1;
-  background-color: lighten(@input-background-color, 10%);
+  // background-color: lighten(@input-background-color, 10%);
+  background-color: desaturate( @background-color-info, 50% );
 }
 
 atom-text-editor {
