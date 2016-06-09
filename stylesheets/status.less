@@ -1,6 +1,8 @@
 
 status-bar {
-
+  background-color: @inset-panel-background-color;
+  border-top: 1px solid @tool-panel-border-color;
+  color: @text-color-info;
 }
 
 status-bar a {
@@ -10,16 +12,13 @@ status-bar .cursor-position a {
   color: @text-color;
 }
 
-encoding-selector-status {
-  a {
-    color: @text-color-subtle;
-  }
-}
 .grammar-status a,
-.encoding-status a {
+.encoding-status a,
+a.line-ending-tile {
   color: @text-color-subtle;
   font-weight: 700;
   letter-spacing: -1px;
+  padding: 0px 2px 0px 0px;
 }
 
 .find-and-replace .options-label .options,
