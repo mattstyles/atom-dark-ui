@@ -1,7 +1,7 @@
 {
   "name": "lambda-ui",
   "theme": "ui",
-  "version": "0.11.1",
+  "version": "0.12.0",
   "description": "Minimalist dark low contrast theme",
   "license": "MIT",
   "repository": "https://github.com/mattstyles/lambda-ui",
