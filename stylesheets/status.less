@@ -2,7 +2,7 @@
 status-bar {
   background-color: @inset-panel-background-color;
   border-top: 1px solid @tool-panel-border-color;
-  color: @text-color-info;
+  color: @text-color;
 }
 
 status-bar a {
@@ -24,4 +24,11 @@ a.line-ending-tile {
 .find-and-replace .options-label .options,
 .project-find .options-label .options {
   color: @text-color-subtle;
+}
+
+.status-bar-vim-mode-insert {
+  color: @selectionYellow;
+}
+.status-bar-vim-mode-normal {
+  color: @text-color;
 }
