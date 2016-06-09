@@ -27,8 +27,20 @@ a.line-ending-tile {
 }
 
 .status-bar-vim-mode-insert {
-  color: @selectionYellow;
+  color: @ui-site-color-1;
 }
 .status-bar-vim-mode-normal {
   color: @text-color;
+}
+
+.git-view {
+  .commits-ahead-label {
+    color: @ui-site-color-1;
+  }
+  .commits-behind-label {
+    color: @text-color-error;
+  }
+  .status-modified {
+    color: @orange;
+  }
 }
