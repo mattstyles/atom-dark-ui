@@ -2,7 +2,7 @@
 
 .tree-view-scroller {
   background: @tree-view-background-color;
-  background: #2a2a2a;
+  // background: #fa2a2a;
   box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
   border-right: 1px solid #181818;
 
@@ -25,6 +25,14 @@
     display: inline-block;
     position: relative !important;
   }
+
+  .entry:before {
+    background-color: @gray900;
+  }
+
+  .tree-view-root {
+    padding-right: 0px;
+  }
 }
 
 .focusable-panel {
@@ -34,7 +42,7 @@
     background: #282828;
 
     .selected:before {
-    //   background: @background-color-selected;
+      // background: @background-color-selected;
     }
 
     .selected > .name,
@@ -46,6 +54,6 @@
   }
 
   .name:before {
-      color: #aaa;
+      color: @gray500;
   }
 }

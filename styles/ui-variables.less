@@ -1,14 +1,18 @@
 // Colors
 
-@text-color: #aaa;
-@text-color-subtle: #555;
-@text-color-highlight: #fff;
+@text-color: @gray500;
+@text-color-subtle: @gray700;
+@text-color-highlight: @gray100;
 @text-color-selected: @text-color-highlight;
 
-@text-color-info: #5293d8;
-@text-color-success: #26c26a;
-@text-color-warning: #ff982d;
-@text-color-error: #c00;
+// @text-color-info: #5293d8;
+// @text-color-success: #26c26a;
+// @text-color-warning: #ff982d;
+// @text-color-error: #c00;
+@text-color-info: @cyan;
+@text-color-success: @green;
+@text-color-warning: @orange;
+@text-color-error: @darkRed;
 
 @text-color-ignored: @text-color-subtle;
 @text-color-added: @text-color-success;
@@ -23,32 +27,32 @@
 @background-color-highlight: rgba(255, 255, 255, 0.07);
 @background-color-selected: #4182C4;
 
-@app-background-color: #333;
+@app-background-color: @gray950;
 
-@base-background-color: lighten(@tool-panel-background-color, 5%);
+@base-background-color: @tool-panel-background-color;
 @base-border-color: rgba(0, 0, 0, 0.5);
 
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color: rgba(0, 0, 0, 0.5);
 
-@input-background-color: #212224;
+@input-background-color: @gray900;
 @input-border-color: @base-border-color;
 
-@tool-panel-background-color: #1d1d1d;
-@tool-panel-border-color: #232323;
+@tool-panel-background-color: @gray950;
+@tool-panel-border-color: @gray800;
 
-@inset-panel-background-color: #161719;
+@inset-panel-background-color: @gray900;
 @inset-panel-border-color: @base-border-color;
 
-@panel-heading-background-color: #43484d;
+@panel-heading-background-color: @gray700;
 @panel-heading-border-color: fadein(@base-border-color, 10%);
 
-@overlay-background-color: #202123;
+@overlay-background-color: @gray900;
 @overlay-border-color: @background-color-highlight;
 
-@button-background-color: #43484d;
-@button-background-color-hover: lighten(@button-background-color, 5%);
-@button-background-color-selected: #5c6064;
+@button-background-color: @gray700;
+@button-background-color-hover: @gray600;
+@button-background-color-selected: @gray500;
 @button-border-color: @base-border-color;
 
 @tab-bar-background-color: #222;
@@ -57,10 +61,10 @@
 @tab-background-color-active: #222;
 @tab-border-color: #484848;
 
-@tree-view-background-color: @app-background-color;
-@tree-view-border-color: @tool-panel-border-color;
+@tree-view-background-color: @gray800;
+@tree-view-border-color: @gray700;
 
-@scrollbar-background-color: rgba(42, 42, 42, 0.5);
+@scrollbar-background-color: rgba(42, 42, 42, 0.1);
 @scrollbar-color: rgba(92, 92, 92, 0.5);
 
 @ui-site-color-1: @background-color-success; // green
@@ -68,7 +72,6 @@
 @ui-site-color-3: @background-color-warning; // orange
 @ui-site-color-4: #db2ff4; // purple
 @ui-site-color-5: #f5e11d; // yellow
-
 
 // Sizes
 
@@ -91,19 +94,45 @@
 
 
 // Colours
+@gray100: #f7fafc;
+@gray200: #edf2f7;
+@gray300: #e2e8f0;
+@gray400: #cbcfd0;
+@gray500: #aea8aa;
+@gray600: #74707f;
+@gray700: #4f4a52;
+@gray800: #2c2830;
+@gray900: #222024;
+@gray950: #18151b;
 
+// Slightly purple variant
+// @gray800: #2c2830;
+// @gray900: #221d24;
+// @gray950: #18121b;
 
+// old
+// @mercury: #e6e6e6;
+// @cyan: #64c8ff;
+// @blue: #66ffff;
+// @green: #00ff00;
+// @red: #e50000;
+// @yellow: #ffff66;
+// @purple: #b294bb;
+// @orange: #de935f;
+// @light-orange: #f0c674;
+// @darkRed: #990000;
+
+// from syntax theme
 @mercury: #e6e6e6;
-@cyan: #64c8ff;
-@blue: #66ffff;
-@green: #00ff00;
-@red: #e50000;
-@yellow: #ffff66;
+@cyan: #76D7EA;
+@blue: #4570E6;
+@green: #3AA655;
+@darkRed: #ED0A3F;
+@red: #FE4C40;
+@yellow: #FBE870;
+@purple: #F653A6;
+@orange: #fCa667;
+@light-orange: #FF3399;
 
-@darkRed: #990000;
-@selectionBlue: #0080ff;
+@selectionBlue: #408cbf;
 @selectionYellow: #ddaa44;
-
-@purple: #b294bb;
-@orange: #de935f;
-@light-orange: #f0c674;
